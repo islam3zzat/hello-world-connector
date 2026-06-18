@@ -19,7 +19,7 @@ const create = async (resource: Resource) => {
     // Deserialize the resource to a CartDraft
     const cartDraft = JSON.parse(JSON.stringify(resource));
 
-    if (cartDraft.obj.lineItems.length !== 0) {
+    if (cartDraft.obj?.lineItems?.length) {
       productId = cartDraft.obj.lineItems[0].productId;
     }
 
