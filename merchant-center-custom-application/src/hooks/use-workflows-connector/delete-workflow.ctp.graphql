@@ -1,0 +1,6 @@
+mutation DeleteWorkflow($container: String!, $key: String!, $version: Int!) {
+  deleteCustomObject(container: $container, key: $key, version: $version) {
+    id
+    key
+  }
+}

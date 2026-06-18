@@ -1,4 +1,21 @@
 deployAs:
+  - name: merchant-center-custom-application
+    applicationType: merchant-center-custom-application
+    configuration:
+      standardConfiguration:
+        - key: CUSTOM_APPLICATION_ID
+          description: The Custom Application ID provided when you register the app in the Merchant Center
+          required: true
+        - key: ENTRY_POINT_URI_PATH
+          description: The entry point URI path (n8n-workflow-manager)
+          required: true
+        - key: CLOUD_IDENTIFIER
+          description: Cloud region (gcp-eu | gcp-us | aws-eu | aws-us)
+          required: false
+          default: 'gcp-eu'
+        - key: APPLICATION_URL
+          description: The deployed URL of this application
+          required: true
   - name: merchant-center-custom-view
     applicationType: merchant-center-custom-view
     configuration:

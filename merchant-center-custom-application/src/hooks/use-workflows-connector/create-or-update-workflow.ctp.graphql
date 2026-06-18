@@ -1,0 +1,11 @@
+mutation CreateOrUpdateWorkflow($draft: CustomObjectDraft!) {
+  createOrUpdateCustomObject(draft: $draft) {
+    id
+    key
+    container
+    version
+    value
+    createdAt
+    lastModifiedAt
+  }
+}

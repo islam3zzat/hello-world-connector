@@ -1,0 +1,16 @@
+query FetchWorkflows($container: String!, $limit: Int, $offset: Int) {
+  customObjects(container: $container, limit: $limit, offset: $offset) {
+    results {
+      id
+      key
+      container
+      version
+      value
+      createdAt
+      lastModifiedAt
+    }
+    total
+    count
+    offset
+  }
+}
