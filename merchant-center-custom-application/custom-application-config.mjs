@@ -13,12 +13,12 @@ const config = {
     },
     production: {
       applicationId: process.env.CUSTOM_APPLICATION_ID || 'cmqjj3n1u000t01z2lkhwgl1m',
-      url: process.env.APPLICATION_URL || 'https://your_app_hostname.com',
+      url: process.env.APPLICATION_URL || 'https://mc-app-669r8s71utnej1fnsytyz49y.europe-west1.gcp.preview.commercetools.app',
     },
   },
   oAuthScopes: {
-    view: ['view_orders', 'view_customers', 'view_products', 'view_subscriptions'],
-    manage: ['manage_subscriptions'],
+    view: ['view_orders', 'view_customers', 'view_products', 'view_key_value_documents'],
+    manage: ['manage_subscriptions', 'manage_key_value_documents'],
   },
   icon: '${path:@commercetools-frontend/assets/application-icons/rocket.svg}',
   mainMenuLink: {
