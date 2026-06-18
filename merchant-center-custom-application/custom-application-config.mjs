@@ -12,7 +12,7 @@ const config = {
       initialProjectKey: 'ifarg-project',
     },
     production: {
-      applicationId: process.env.CUSTOM_APPLICATION_ID || 'TODO',
+      applicationId: process.env.CUSTOM_APPLICATION_ID || 'cmqjj3n1u000t01z2lkhwgl1m',
       url: process.env.APPLICATION_URL || 'https://your_app_hostname.com',
     },
   },
