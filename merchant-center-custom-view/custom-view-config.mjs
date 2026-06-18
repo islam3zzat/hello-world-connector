@@ -9,8 +9,8 @@ const config = {
       initialProjectKey: 'ifarg-project',
     },
     production: {
-      customViewId: 'TODO',
-      url: 'https://my-custom-view.com',
+      customViewId: 'cmqjebc5l000l01z2czpfnbo7',
+      url: 'https://mc-view-36nqf3f3l5bvbsjz93vnmvrz.europe-west1.gcp.preview.commercetools.app',
     },
   },
   oAuthScopes: {
