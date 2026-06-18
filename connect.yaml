@@ -1,0 +1,15 @@
+deployAs:
+  - name: merchant-center-custom-view
+    applicationType: merchant-center-custom-view
+    configuration:
+      standardConfiguration:
+        - key: CUSTOM_VIEW_ID
+          description: The Custom View ID provided when you register the view in the Merchant Center
+          required: true
+        - key: ENTRY_POINT_URI_PATH
+          description: The entry point URI path identified during registration
+          required: true
+        - key: CLOUD_IDENTIFIER
+          description: Cloud region the customization uses to reach Composable Commerce
+          required: false
+          default: 'gcp-eu'

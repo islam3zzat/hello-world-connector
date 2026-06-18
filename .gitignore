@@ -9,4 +9,3 @@ coverage
 build/
 .env
 public/
-.claude/

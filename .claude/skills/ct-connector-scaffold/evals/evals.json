@@ -1,0 +1,29 @@
+{
+  "skill_name": "ct-connector-scaffold",
+  "evals": [
+    {
+      "id": 0,
+      "name": "custom-view-routing",
+      "prompt": "I want to start a new commercetools Connect connector in TypeScript. The only thing it needs to do is add a little panel on the existing Product details page in the Merchant Center that shows some extra info. Walk me through scaffolding it and tell me how I'll know it's set up correctly before I push it.",
+      "expected_output": "Routes to the Merchant Center customization path: scaffolds the custom view with create-mc-app (--application-type custom-view, starter-typescript), wires merchant-center-custom-view into connect.yaml with CUSTOM_VIEW_ID / ENTRY_POINT_URI_PATH, and gives a verification checklist based on `mc-scripts build` + tests. Must NOT require port 8080 or a gcp-build script for the custom view.",
+      "assertions": [],
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "backend-service-routing",
+      "prompt": "Help me bootstrap a commercetools connector project (TypeScript) for a tax integration. It needs a service app that responds to a cart API Extension in real time. How do I scaffold it and what do I check before moving on?",
+      "expected_output": "Routes to the backend path: scaffolds with create-connect-app, keeps the service folder, registers it in connect.yaml with an endpoint + CTP_* config + post/pre-deploy scripts, and the verification checklist requires a gcp-build script, a start script, and the server binding port 8080.",
+      "assertions": [],
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "mixed-backend-and-mc",
+      "prompt": "I'm setting up a new CT Connect connector. It has two parts: a job that runs nightly to sync inventory from our ERP, and a Merchant Center custom application page where ops can see the last sync status. TypeScript. Scaffold it and explain how to verify each part is ready.",
+      "expected_output": "Recognizes two app-type families. The job follows backend rules (gcp-build, port 8080, cron schedule in connect.yaml, CTP_* config). The custom application follows MC rules (create-mc-app, mc-scripts build, CUSTOM_APPLICATION_ID/ENTRY_POINT_URI_PATH, no port 8080). Verification is given per-app and does not conflate the two checklists.",
+      "assertions": [],
+      "files": []
+    }
+  ]
+}
